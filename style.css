@@ -1,0 +1,72 @@
+body {
+	background-color: white;
+	color: black;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.nav div {
+	border-bottom: 3px solid black;
+}
+
+.productarea {
+	text-align: center;
+	padding: 20px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Center items horizontally */
+	gap: 20px; /* Space between items */
+}
+
+.productdetails {
+	width: 250px;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center; /* Center the text inside the productdetails */
+}
+
+.productdetails img {
+	width: 100%;
+	height: auto;
+}
+
+.productdetails:hover {
+	background-color: lightgray;
+}
+
+#logo {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	font-size: 41px;
+	padding: 5px 0;
+}
+
+.topmenu {
+	font-size: 11px;
+	width: inherit;
+	background-color: lightgray;
+	text-align: right;
+	padding: 3px;
+	letter-spacing: 1.5px;
+	word-spacing: 5px;
+	margin: -1.5px auto;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+	.products {
+		justify-content: space-around; /* Distribute items evenly on larger screens */
+	}
+}
