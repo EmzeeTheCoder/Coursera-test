@@ -7,8 +7,12 @@ body {
 	margin: 0;
 }
 
-.nav div {
+.nav {
+	position: sticky;
+	top: 0;
+	background-color: white;
 	border-bottom: 3px solid black;
+	width: 100%;
 }
 
 .productarea {
@@ -51,13 +55,12 @@ body {
 
 .topmenu {
 	font-size: 11px;
-	width: inherit;
 	background-color: lightgray;
 	text-align: right;
 	padding: 3px;
 	letter-spacing: 1.5px;
 	word-spacing: 5px;
-	margin: -1.5px auto;
+	margin: 0;
 }
 
 a:link {
@@ -69,5 +72,12 @@ a:link {
 	.products {
 		justify-content: center; /* Distribute items evenly on larger screens */
 		gap: 19px;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.products {
+		flex-direction: column;
+		align-items: center;
 	}
 }
